@@ -1,10 +1,10 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-var bdd = require('../models/bdd')
+var bdd = require("../models/bdd");
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Express' });
+router.get("/", function(req, res, next) {
+  res.render("index", { title: "Express" });
 });
 
 // GET / Liste parcours
@@ -13,9 +13,6 @@ router.get('/', function (req, res, next) {
 
 // GET intro ==> pour fetch le texte d'intro parcours
 
-// 
-
-
-
+//
 
 module.exports = router;
