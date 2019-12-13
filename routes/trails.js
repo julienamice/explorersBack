@@ -5,36 +5,39 @@ var bdd = require("../models/bdd");
 var mockTrailList = [
   {
     id: 1,
-    location: "localisation1",
-    parcours: "parcours1",
+    location: "Localisation1",
+    parcours: "Parcours1",
     rating: 5,
-    subtitle: "subtitle1",
-    desc: "description1",
+    subtitle: "Subtitle1",
+    desc:
+      "description 1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit.",
     isTeacher: false,
     details:
-      "blabla1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
+      "Notions Programme 1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
   },
   {
     id: 2,
-    location: "localisation2",
-    parcours: "parcours2",
+    location: "Localisation2",
+    parcours: "Parcours2",
     rating: 3,
-    subtitle: "subtitle2",
-    desc: "description2",
+    subtitle: "Subtitle2",
+    desc:
+      "description 2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit.",
     isTeacher: false,
     details:
-      "blabla2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
+      "Notions Programme 2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
   },
   {
     id: 3,
-    location: "localisation3",
-    parcours: "parcours3",
+    location: "Localisation3",
+    parcours: "Parcours3",
     rating: 2,
-    subtitle: "subtitle3",
-    desc: "description3",
+    subtitle: "Subtitle3",
+    desc:
+      "description 3 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit.",
     isTeacher: false,
     details:
-      "blabla3 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
+      "Notions Programme 3 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
   }
 ];
 
