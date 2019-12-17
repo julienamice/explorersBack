@@ -3,9 +3,11 @@ var express = require("express");
 console.log("> Starting server...");
 var app = express();
 
+
 var usersRouter = require("./routes/users");
 var trailsRouter = require("./routes/trails");
 var enigmasRouter = require("./routes/enigmas");
+
 
 console.log("> Router injection...");
 app.use("/users", usersRouter);

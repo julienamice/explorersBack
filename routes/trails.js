@@ -2,8 +2,11 @@ var express = require("express");
 var router = express.Router();
 var bdd = require("../models/bdd");
 
+var trailModel = require('../models/trail.model')
+
+
 /* GET home page. */
-router.get("/", function(req, res, next) {
+router.get("/", function (req, res, next) {
   var mockTrailList = [
     { id: 1, location: "localisation1", parcours: "parcours1", rating: 5 },
     { id: 2, location: "localisation2", parcours: "parcours2", rating: 3 },
@@ -17,8 +20,13 @@ router.get("/", function(req, res, next) {
 
 // POST start ==> Check geoloc
 
-// GET intro ==> pour fetch le texte d'intro parcours
+router.get("/content", function (req, res, next) {
+  console.log('Route Enigma')
+  var idEgnima = req.query.id
 
-//
+
+
+  res.json({ id: 4, textIntro: 'Lorem Ipsum introduction ' })
+})
 
 module.exports = router;

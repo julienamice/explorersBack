@@ -29,6 +29,7 @@ var trail = {
 };
 
 var details = {
+  location: Object,
   detailsId: Number,
   trail_name: String,
   visual: Map,
@@ -41,6 +42,7 @@ var details = {
 };
 
 var enigma = [
+
   {
     louvre: {
       //step 1 : besoin d'images (les fausses et les bonnes)
