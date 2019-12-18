@@ -3,8 +3,34 @@ var router = express.Router();
 var bdd = require("../models/bdd");
 
 /* GET home page. */
-router.get("/", function(req, res, next) {
-  res.json({ users: [] });
+router.get("/:id", function(req, res, next) {
+  var userInfos = [
+    {
+      id: 1,
+      name: "name1",
+      lastname: "lastname1",
+      email: "name1@gmail.com",
+      Teacher: true
+    },
+    {
+      id: 2,
+      name: "name2",
+      lastname: "lastname2",
+      email: "name2@gmail.com",
+      Teacher: false
+    },
+    {
+      id: 3,
+      name: "name3",
+      lastname: "lastname3",
+      email: "name3@gmail.com",
+      Teacher: true
+    }
+  ];
+
+  const user = userInfos.find(user => user.id === parseInt(req.params.id));
+  console.log(user);
+  res.json(user);
 });
 
 // POST inscription
