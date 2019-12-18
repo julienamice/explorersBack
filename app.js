@@ -2,6 +2,7 @@ var express = require("express");
 
 console.log("> Starting server...");
 var app = express();
+app.use(express.json());
 
 var usersRouter = require("./routes/users");
 var trailsRouter = require("./routes/trails");
