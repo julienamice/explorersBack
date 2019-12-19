@@ -4,7 +4,7 @@ var bdd = require("../models/bdd");
 var userModel = require("../models/users.model");
 
 /* GET home page. */
-router.get("/:id", function(req, res, next) {
+router.get("/:id", function (req, res, next) {
   var userInfos = [
     {
       id: 1,
@@ -35,7 +35,7 @@ router.get("/:id", function(req, res, next) {
 });
 
 // POST inscription
-router.post("/signup", async function(req, res, next) {
+router.post("/signup", async function (req, res, next) {
   console.log("on est dans signup", req.body);
   var newUser = new userModel({
     firstName: req.body.firstName,
@@ -44,7 +44,7 @@ router.post("/signup", async function(req, res, next) {
     isTeacher: req.body.isTeacher
   });
 
-  newUser.save(function(error, user) {
+  newUser.save(function (error, user) {
     if (error) {
       console.log("Oups...error ->", error);
     } else {
@@ -82,12 +82,12 @@ router.post("/signup", async function(req, res, next) {
 });
 
 // POST connexion
-router.post("/signin", function(req, res) {
+router.post("/signin", function (req, res) {
   //  if (req.body.firstName=== && req.body.password ===) {
 
   userModel.findOne(
     { firstName: req.body.firstName, password: req.body.password },
-    function(err, user) {
+    function (err, user) {
       if (user) {
         console.log("dans ma base de donnée --->", user);
 
@@ -102,9 +102,9 @@ router.post("/signin", function(req, res) {
 });
 
 // DELETE suppression
-router.delete("/:_id", async function(req, res, next) {
+router.delete("/:_id", async function (req, res, next) {
   console.log("CA DEVRAIT PASSER LA !!!", req.params);
-  userModel.deleteOne({ _id: req.params._id }, function(err, user) {
+  userModel.deleteOne({ _id: req.params._id }, function (err, user) {
     if (err) {
       console.log("Oups...error ->", err);
       res.json({ result: false });
