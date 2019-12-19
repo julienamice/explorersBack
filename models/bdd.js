@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var mongo =
-  "mongodb+srv://TwiskyA:Mi4cSxM456@cluster0-k8x5q.gcp.mongodb.net/Explorers?retryWrites=true";
+  "mongodb+srv://admin:admin@cluster0-mirgi.gcp.mongodb.net/test?retryWrites=true&w=majority";
 
 var options = {
   connectTimeoutMS: 5000,
