@@ -76,12 +76,13 @@ var mockTrailList = [
 ];
 
 // GET / Liste parcours
-router.get("/", function(req, res) {
+router.get("/", function (req, res) {
+  console.log('JE SUIS DANS LA BONNE ROUTE TA MERE')
   res.json(mockTrailList);
 });
 
-router.get("/:id", function(req, res) {
-  // console.log(req.params);
+router.get("/:id", function (req, res) {
+  console.log('JE SUIS DANS LAUTRE BONNE ROUTE TA MERE');
 
   const trail = mockTrailList.find(
     mockTrail => mockTrail.id === parseInt(req.params.id)

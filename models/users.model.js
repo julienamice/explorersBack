@@ -5,7 +5,10 @@ var userSchema = mongoose.Schema({
   firstName: String,
   email: String,
   password: String,
-  isTeacher: Boolean
+  isTeacher: Boolean,
+  salt: String,
+  userId: Number,
+
 });
 
 var userModel = mongoose.model("users", userSchema);
