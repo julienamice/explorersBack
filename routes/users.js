@@ -19,12 +19,14 @@ router.get('/signup', async function (req, res, next) {
     email: emailFF
   })
 
+
   if (req.query.email == "" || req.query.password == "") {
     console.log('User doesnt signup')
     res.render('Sign');
   }
 
   if (checkUserDB) {
+
 
     res.json({ result: false, errorMsg: 'already exist' });
 
@@ -48,6 +50,22 @@ router.get('/signup', async function (req, res, next) {
 
 });
 
+// POST connexion
+// router.get("/signin", function(req, res) {
+//   //  if (req.body.firstName=== && req.body.password ===) {
+
+//   userModel.findOne(
+//     { firstName: req.query.firstName, password: req.query.password },
+//     function(err, user) {
+//       if (user) {
+//         console.log("dans ma base de donnée --->", user);
+
+//         // user.save();
+//         res.json(user);
+//       } else {
+//         console.log(err);
+//         res.json({ result: false });
+//       }
 
 router.get('/signin', async function (req, res, next) {
   let emailFF = req.query.email
@@ -70,6 +88,7 @@ router.get('/signin', async function (req, res, next) {
       res.json({ result: true, user: checkUserDB });
     } else {
       res.json({ result: false, errorMsg: 'email or password not valid' });
+
     }
 
   } else {
