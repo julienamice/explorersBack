@@ -35,13 +35,13 @@ router.get("/:id", function(req, res, next) {
 });
 
 // POST inscription
-router.post("/signup", async function(req, res, next) {
-  console.log("on est dans signup", req.body);
+router.get("/signup", async function(req, res, next) {
+  console.log("on est dans signup", req.query);
   var newUser = new userModel({
-    firstName: req.body.firstName,
-    email: req.body.email,
-    password: req.body.password,
-    isTeacher: req.body.isTeacher
+    firstName: req.query.firstName,
+    email: req.query.email,
+    password: req.query.password,
+    isTeacher: req.query.isTeacher
   });
 
   newUser.save(function(error, user) {
@@ -49,7 +49,7 @@ router.post("/signup", async function(req, res, next) {
       console.log("Oups...error ->", error);
     } else {
       console.log("user ->", user);
-      console.log("body", req.body);
+      console.log("query", req.query);
 
       res.json(user);
     }
@@ -82,11 +82,11 @@ router.post("/signup", async function(req, res, next) {
 });
 
 // POST connexion
-router.post("/signin", function(req, res) {
+router.get("/signin", function(req, res) {
   //  if (req.body.firstName=== && req.body.password ===) {
 
   userModel.findOne(
-    { firstName: req.body.firstName, password: req.body.password },
+    { firstName: req.query.firstName, password: req.query.password },
     function(err, user) {
       if (user) {
         console.log("dans ma base de donnée --->", user);

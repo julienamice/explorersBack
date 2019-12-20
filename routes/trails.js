@@ -14,34 +14,64 @@ var mockTrailList = [
     desc:
       "Visitez Paris en passant par les momuments qui ont contribués à sa création.",
     isTeacher: true,
-    details:
-      "Notions Programme : CM1 \n Histoire : Thème 2 \n -Saint Louis \n -François 1er \n -Henri IV \n -Louis XIV \n   +Art   +Sciences   +Maths"
+    details: "Notions Programme CM1",
+    matiere: "Histoire Thème 2 :",
+    notions: "-Saint Louis \n-François 1er \n-Henri IV \n-Louis XIV ",
+    tag1: "Art",
+    tag2: "Sciences",
+    tag3: "Maths"
   },
   {
     id: 2,
     location: "Paris",
     img: "monceau",
     parcours: "Paris à travers ses parcs",
-    rating: 3,
+    rating: 4,
     subtitle:
       "Le parc Monceau - le parc de Vincennes - le parc des Buttes Chaumont - le parc de Belleville",
     desc: "Parcourez la capitale en découvrant ses illustres parcs.",
     isTeacher: false,
-    details:
-      "Notions Programme : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
+    details: "Notions Programme CM2",
+    matiere: "Géographie Thème 2 :",
+    notions: "-Saint Louis \n-François 1er \n-Henri IV \n-Louis XIV ",
+    tag4: "Géographie",
+    tag2: "Sciences",
+    mapName: "parc"
   },
   {
     id: 3,
     location: "Paris",
     img: "vincennes",
     parcours: "Les châteaux parisiens",
-    rating: 2,
+    rating: 3,
     subtitle:
       "Le château de Vincennes - le château de la Reine Blanche - le château de Fontainebleau - l'ancien château des Ternes",
     desc: "Visitez Paris et son histoire au travers de ces châteaux.",
     isTeacher: true,
-    details:
-      "Notions Programme : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan, quam sed euismod placerat, nunc orci viverra nisl, eget aliquet elit libero vel mauris. Vivamus vel enim non ligula ultricies fringilla. Vivamus non eleifend libero, sed lobortis velit."
+    details: "Notions Programme CM1",
+    matiere: "Histoire Thème 2 :",
+    notions: "-Le temps des Rois -La Révolution -L'Empire",
+    tag2: "Sciences",
+    tag5: "Histoire des Arts",
+    mapName: "chateau"
+  },
+  {
+    id: 4,
+    location: "Paris",
+    img: "mars",
+    parcours: "La Révolution Française",
+    rating: 3,
+    subtitle:
+      "Champ de Mars - la Concorde - les tuileries - la place de la Nation - la place Vendôme",
+    desc:
+      "Parcourez la Capitale à travers les lieux symboliques de la Révolution Française.",
+    isTeacher: true,
+    details: "Notions Programme CM2",
+    matiere: "Histoire Thème 2 :",
+    notions: "-La Marianne -Devise de la France -La Marseillaise",
+    tag6: "Enseignement Moral",
+    tag2: "Sciences",
+    mapName: "revo"
   }
 ];
 
